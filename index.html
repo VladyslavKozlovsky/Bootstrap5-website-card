@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Выполнение задания четвертого модуля">
+  <meta name="author" content="Владислав Козловский">
+  <title>Bootstrap Task</title>
+  <link href="img/favicon.png" rel="shortcut icon" type="image/png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__main container-fluid">
+      <div class="header__content d-flex align-items-center justify-content-center">
+        <div class="d-flex flex-wrap align-items-center justify-content-center">
+          <h1 class="display-2 fw-bold">Крутое портфолио</h1>
+        </div>
+        <div class="d-flex flex-wrap align-items-center justify-content-center mt-2">
+          <h4 class="me-1 fst-italic"><small>Найдите интересные материалы для себя</small></h4>
+        </div>
+        <button type="button" class="btn btn-danger mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Найти больше
+        </button>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark" id="staticBackdropLabel">Найти больше</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-dark">
+              <embed src="https://itproger.com/courses/" id="embed">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button type="button" class="btn btn-success"  disabled>Принять</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__upper container-fluid d-flex align-items-center justify-content-center">
+      <h4 class="text-dark">Множество крутых проектов для вас и вашей команды!</h4>
+      <p class="text-dark">Отличные простые и стильные проекты, которые подойдут как для небольшого сайта, так и для крупной компании!</p>
+      <a href="#services" class="mt-4"><button class="btn btn-secondary">Что мы предлагаем?</button></a>
+    </div>
+    <div class="main__lower container-fluid d-flex bg-danger align-items-center justify-content-center">
+      <h5 class="text-body text-uppercase" id="services">Услуги</h5>
+      <h3 class="mb-4">Что мы предлагаем</h3>
+      <div class="row align-items-center justify-content-around m-1">
+        <div class="col-md-2"><p class="m-0 fs-5 fw-bold">Готовый код</p><p>можно встраивать в свои проeкты</p></div>
+        <div class="col-md-2"><p class="m-0 fs-5 fw-bold">Легко переделать</p><p>Легкий и удобный код, который легко переписать</p></div>
+        <div class="col-md-2"><p class="m-0 fs-5 fw-bold">Помощь</p><p>Поддержка и помощь при работе с сервисомЫ</p></div>
+        <div class="col-md-2"><p class="m-0 fs-5 fw-bold">Качество</p><p>Качественные работы по низким ценам</p></div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__main container-fluid">
+      <div class="footer__content d-flex align-items-center justify-content-center">
+        <div class="d-flex flex-wrap align-items-center justify-content-center">
+          <h1 class="display-2"><b>Ваш новый веб сайт!</b></h1>
+        </div>
+        <button type="button" class="btn btn-danger mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop-2">
+        Начать работать!
+        </button>
+        <div class="modal fade" id="staticBackdrop-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel-2" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark" id="staticBackdropLabel-2">Вход</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-dark p-3">
+              <form class="px-4 py-3">
+                <div class="form-group">
+                  <label for="email" class="text-dark my-3">Адрес электронной почты</label>
+                  <input type="email" class="form-control" id="email" placeholder="Введите ваш Email">
+                </div>
+                <div class="form-group">
+                  <label for="password" class="text-dark my-3">Пароль</label>
+                  <input type="password" class="form-control" id="password">
+                </div>
+                <div class="form-group my-3">
+                  <div class="form-check d-flex align-items-start">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                    <label class="form-check-label text-dark mx-4" for="dropdownCheck">Запомнить меня</label>
+                  </div>
+                </div>
+              </form>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Регистрация</a>
+              <a class="dropdown-item" href="#">Забыли пароль?</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button type="submit" class="btn btn-success"  disabled>Войти</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="JavaScript/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
